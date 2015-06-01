@@ -15,7 +15,7 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3'
-    )
+    ),
     description='Generate pseudorandom numbers by using algebra',
     test_suite='test_pyudorandom'
 )
