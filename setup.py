@@ -1,5 +1,5 @@
 try:
-    setuptools import setup
+    from setuptools import setup
 except ImportError:
     from distutils.core import setup
 
