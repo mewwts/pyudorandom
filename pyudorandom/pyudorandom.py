@@ -8,21 +8,43 @@ Functions:
     bin_gcd(a, b) <- calculate the gcd of a and b fast
 
 """
+def items(ls):
+    """
+    Yields the elements of ls in a pseudorandom fashion.
 
-def pyudorandom(n):
+    """
+    for i in indices(len(ls)):
+        yield ls[i]
+
+def shuffle(ls):
+    """
+    Takes a list ls and returns a new list with the elements of ls
+    in a new order.
+
+    """
+    return list(items(ls))
+
+def indices(n):
     """
     Generates the cyclic group 0 through n-1 using a number
     which is relative prime to n.
 
     """
-    while True:
-        rand = int(random.random() * n) 
-        if bin_gcd(rand, n) == 1:
-            break
+    rand = find_gcd_one(n)
     i = 1
     while i <= n:
         yield i*rand % n
         i += 1
+
+def find_gcd_one(n):
+    """
+    Find a number between 1 and n that has gcd with n equal 1.
+
+    """
+    while True:
+        rand = int(random.random() * n)
+        if bin_gcd(rand, n) == 1:
+            return rand
 
 def bin_gcd(a, b):
     """
