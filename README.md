@@ -34,7 +34,7 @@ True
 ##pyudorandom.indices(ls)
 Get the indices of the list in a 'random' order.
 
-##Performance 
+#Performance 
 See source in perf.py.
 
 methods|n=10|n=100|n=1000|n=10000|n=100000|n=10000000|
