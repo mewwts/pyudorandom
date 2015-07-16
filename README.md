@@ -1,4 +1,5 @@
 #Pyudorandom
+[![build Status](https://travis-ci.org/mewwts/pyudorandom.svg?branch=master)](https://travis-ci.org/mewwts/pyudorandom) [![Coverage Status](https://img.shields.io/coveralls/mewwts/pyudorandom.svg)](https://coveralls.io/r/mewwts/pyudorandom)
 The pyudorandom module lets you iterate over a list in a non-succsessive, yet deterministic way. 
 It comes in handy when you want to mix up the items, but don't need any guarantees of randomness. Also, it makes sure that it only gives you the elements once.
 
