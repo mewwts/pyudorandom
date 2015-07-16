@@ -37,6 +37,9 @@ class Tests(unittest.TestCase):
     def test_bin_gcd_hard(self):
         self.assertEqual(bin_gcd(54614, 12312), 2)
 
+    def test_bin_gcd_with_zero(self):
+        self.assertEqual(bin_gcd(0, 2000), 2000)
+
 if __name__ == '__main__':
     unittest.main()
 
