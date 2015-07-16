@@ -1,4 +1,5 @@
-#om
+#Pyudorandom
+[![build Status](https://travis-ci.org/mewwts/pyudorandom.svg?branch=master)](https://travis-ci.org/mewwts/pyudorandom) [![Coverage Status](https://img.shields.io/coveralls/mewwts/pyudorandom.svg)](https://coveralls.io/r/mewwts/pyudorandom)
 The pyudorandom module lets you iterate over a list in a non-succsessive, yet deterministic way. 
 It comes in handy when you want to mix up the items, but don't need any guarantees of randomness. Also, it makes sure that it only gives you the elements once.
 
@@ -34,13 +35,13 @@ True
 ##pyudorandom.indices(ls)
 Get the indices of the list in a 'random' order.
 
-##Performance 
+#Performance 
 See source in perf.py.
 
 methods|n=10|n=100|n=1000|n=10000|n=100000|n=10000000|
 |:-----|-----------:|------------:|-----------:|----------:|---------:|---------:|---------:|
-| rand | 9.4878e-05 | 0.000697057 | 0.0079944  | 0.0994185 | 1.15775  | 13.1515  | 158.261  |
-| pysh | 9.2293e-05 | 0.000397103 | 0.00311404 | 0.0421352 | 0.577736 |  6.40441 |  88.2447 |
-| pyit | 7.2781e-05 | 0.000374695 | 0.00349281 | 0.0377044 | 0.551456 |  6.10636 |  84.6845 |
+| random.shuffle | 9.4878e-05 | 0.000697057 | 0.0079944  | 0.0994185 | 1.15775  | 13.1515  | 158.261  |
+| pyudorandom.shuffle | 9.2293e-05 | 0.000397103 | 0.00311404 | 0.0421352 | 0.577736 |  6.40441 |  88.2447 |
+| pyudorandom.items | 7.2781e-05 | 0.000374695 | 0.00349281 | 0.0377044 | 0.551456 |  6.10636 |  84.6845 |
 
-
+Pyudorandom can be twice as fast as random.
