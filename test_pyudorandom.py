@@ -9,6 +9,11 @@ class Tests(unittest.TestCase):
         self.assertNotEqual(generated, my_list)
         self.assertEqual(set(generated), set(my_list))
 
+    def test_items_empty(self):
+        my_list = []
+        my_items = items(my_list)
+        self.assertFalse(list(my_items))
+
     def test_list_shuffle(self):
         my_list = [1, 2, 4, 5, 7, 8]
         generated = shuffle(my_list)

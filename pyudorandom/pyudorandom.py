@@ -13,7 +13,10 @@ def items(ls):
     Yields the elements of ls in a pseudorandom fashion.
 
     """
-    for i in indices(len(ls)):
+    num = len(ls)
+    if num == 0:
+        return []
+    for i in indices(num):
         yield ls[i]
 
 def shuffle(ls):
