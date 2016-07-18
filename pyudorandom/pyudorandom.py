@@ -15,7 +15,7 @@ def items(ls):
     """
     num = len(ls)
     if num == 0:
-        return []
+        return 
     for i in indices(num):
         yield ls[i]
 

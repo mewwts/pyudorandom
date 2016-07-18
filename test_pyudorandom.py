@@ -13,6 +13,7 @@ class Tests(unittest.TestCase):
         my_list = []
         my_items = items(my_list)
         self.assertFalse(list(my_items))
+        self.assertEqual(list(my_items), my_list)
 
     def test_list_shuffle(self):
         my_list = [1, 2, 4, 5, 7, 8]
