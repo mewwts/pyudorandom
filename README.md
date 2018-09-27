@@ -24,7 +24,7 @@ Draw 'random' items from ls.
 5
 ```
 
-##pyudorandom.shuffle(ls)
+## pyudorandom.shuffle(ls)
 Get a new list with the elements of ls in a new order.
 ```Python
 >>> new_order = pyudorandom.shuffle(ls)
@@ -33,10 +33,10 @@ False
 >>> set(new_order) == set(ls)
 True
 ```
-##pyudorandom.indices(ls)
+## pyudorandom.indices(ls)
 Get the indices of the list in a 'random' order.
 
-#Performance 
+# Performance 
 See source in perf.py.
 
 methods|n=10|n=100|n=1000|n=10000|n=100000|n=10000000|
